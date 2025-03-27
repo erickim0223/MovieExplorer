@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+#movies{
+    padding-top: 30px;
+}
+
+#movie-details {
+    padding-top: 30px;
+}
+
+#movies, #favorites {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.movie {
+    background-color: #c8b6b6;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.movie img {
+    width: 400px;
+    height: auto;
+    border-bottom: 4px solid #eee;
+}
+
+.movie img {
+    width: 300px;
+    height: 400px;
+}
+
+#movie-details {
+    display: none;
+}
+
+#favorites {
+
+}
+
+button, input[type=button] {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+  }
+
+button:hover, input[type=button]:hover {
+    background-color: #e7e7e7;
+}
+
+input[type=text] {
+    padding: 6.5px 10px;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #4CAF50;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    background-color: rgb(246, 122, 122);
+    padding: 15px;
+}
+
+#title {
+    background-color: rgb(252, 169, 255);
+}
+
+@media screen and (max-width: 1250px) {
+    #movies, #favorites {
+        grid-template-columns: auto auto auto;
+    }
+} 
+
+@media screen and (max-width: 970px) {
+    #movies, #favorites {
+        grid-template-columns: auto auto;
+    }
+} 
+
+
+@media screen and (max-width: 730px) {
+    #movies, #favorites {
+        grid-template-columns: auto;
+    }
+
+    .movie {
+        width: 60%;
+        margin: 0 auto;
+    }
+} 
