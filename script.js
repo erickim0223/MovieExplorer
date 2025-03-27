@@ -16,7 +16,7 @@ function searchMovies() {
     //Get the search query from the input field
     const query = document.getElementById('search').value;
     // TODO: Add correctly formated API Request URL to Fetch method 
-    fetch("http://www.omdbapi.com/?apikey=" + API_KEY + "&s=" + query)
+    fetch("https://www.omdbapi.com/?apikey=" + API_KEY + "&s=" + query)
         //TODO: Format fetch response Promise as JSON
         .then(response => { console.log(response); return response.json()})
         .then(data => { 
@@ -86,7 +86,7 @@ function searchMovies() {
 
 function getMovieDetails(imdbID) {
      // TODO: Add correctly formated API Request URL to Fetch method 
-     fetch("http://www.omdbapi.com/?apikey=" + API_KEY + "&i=" + imdbID)
+     fetch("https://www.omdbapi.com/?apikey=" + API_KEY + "&i=" + imdbID)
      .then(response => { console.log(response); return response.json()})
      .then(data => { 
          console.log(data);
